@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Project</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1 id="title">Survey Makanan favorit</h1>
+        <p id="description">
+          Survey berikut merupakan survey untuk makanan favorit bagi user
+        </p>
+      </header>
+
+      <form action="" id="survey-form">
+        <div class="input-group">
+          <label for="name" id="name-label">Nama</label>
+          <input type="text" id="name" placeholder="Masukan Nama Anda" />
+        </div>
+        <div class="input-group">
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" placeholder="Masukan Email Anda" />
+        </div>
+        <div class="input-group">
+          <label for="number" id="number-label">Umur</label>
+          <input
+            type="number"
+            id="number"
+            maxlength="2"
+            placeholder="Masukan Umur anda"
+          />
+        </div>
+        <div class="input-group">
+          <label for="dropdown">Jenis Kelamin</label>
+          <select name="" id="dropdown">
+            <option>Laki - Laki</option>
+            <option>Perempuan</option>
+          </select>
+        </div>
+        <div class="input-group">
+          <fieldset id="makanan">
+            <legend>Makanan Apa yang anda suka</legend>
+            <div class="radio-group">
+              <input type="radio" name="makanan" value="Nasi Goreng" />Nasi
+              Goreng
+            </div>
+            <div class="radio-group">
+              <input type="radio" name="makanan" value="Bakso" />Bakso
+            </div>
+            <div class="radio-group">
+              <input type="radio" name="makanan" value="Mie Ayam" />Mie Ayam
+            </div>
+            <div class="radio-group">
+              <input type="radio" name="makanan" value="Soto" />Soto
+            </div>
+          </fieldset>
+        </div>
+        <div class="input-group">
+          <fieldset id="minuman">
+            <legend for="minuman">Minuman Yang anda suka</legend>
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                name="minuman"
+                id="minuman"
+                value="ES Teh Manis"
+              />
+              ES Teh Manis
+            </div>
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                name="minuman"
+                id="minuman"
+                value="ES Jeruk"
+              />
+              ES Jeruk
+            </div>
+            <div class="checkbox-group">
+              <input
+                type="checkbox"
+                name="minuman"
+                id="minuman"
+                value="Air Putih"
+              />
+              Air Putih
+            </div>
+            <div class="checkbox-group">
+              <input type="checkbox" name="minuman" id="minuman" value="Kopi" />
+              Kopi
+            </div>
+          </fieldset>
+        </div>
+        <div class="input-group">
+          <label for="tanggapan">Berikan Tanggapan Anda</label>
+          <textarea name="" id="tanggapan" cols="30" rows="10"></textarea>
+        </div>
+        <div class="input-group">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentation page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JavaScript Dokumentasi</header>
+      <ul>
+        <li>
+          <a href="#What_is_JavaScript_?" class="nav-link"
+            >What is JavaScript ?</a
+          >
+        </li>
+        <li>
+          <a href="#A_Hello_world!_example" class="nav-link"
+            >A Hello world! example</a
+          >
+        </li>
+        <li><a href="#What_Happened_?" class="nav-link">What Happened ?</a></li>
+        <li>
+          <a href="#Language_Basic_Crash_Course" class="nav-link"
+            >Language Basic Crash Course</a
+          >
+        </li>
+        <li><a href="#Variables" class="nav-link">Variables</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="What_is_JavaScript_?">
+        <header>What is JavaScript ?</header>
+        <article>
+          <p>
+            JavaScript ("JS" for short) is a full-fledged dynamic programming
+            language that can add interactivity to a website. It was invented by
+            Brendan Eich (co-founder of the Mozilla project, the Mozilla
+            Foundation, and the Mozilla Corporation).
+          </p>
+
+          <p>
+            JavaScript is versatile and beginner-friendly. With more experience,
+            you'll be able to create games, animated 2D and 3D graphics,
+            comprehensive database-driven apps, and much more!
+          </p>
+
+          <p>
+            JavaScript itself is relatively compact, yet very flexible.
+            Developers have written a variety of tools on top of the core
+            JavaScript language, unlocking a vast amount of functionality with
+            minimum effort. These include:
+          </p>
+
+          <ul>
+            <li>
+              Browser Application Programming Interfaces (APIs) built into web
+              browsers, providing functionality such as dynamically creating
+              HTML and setting CSS styles; collecting and manipulating a video
+              stream from a user's webcam, or generating 3D graphics and audio
+              samples.
+            </li>
+            <li>
+              Third-party APIs that allow developers to incorporate
+              functionality in sites from other content providers, such as
+              Twitter or Facebook.
+            </li>
+            <li>
+              hird-party frameworks and libraries that you can apply to HTML to
+              accelerate the work of building sites and applications.
+            </li>
+          </ul>
+          <p>
+            It's outside the scope of this article—as a light introduction to
+            JavaScript—to present the details of how the core JavaScript
+            language is different from the tools listed above. You can learn
+            more in MDN's JavaScript learning area, as well as in other parts of
+            MDN.
+          </p>
+          <p>
+            The section below introduces some aspects of the core language and
+            offers an opportunity to play with a few browser API features too.
+            Have fun!
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="A_Hello_world!_example">
+        <header>A Hello world! example</header>
+        <article>
+          <p>
+            avaScript is one of the most popular modern web technologies! As
+            your JavaScript skills grow, your websites will enter a new
+            dimension of power and creativity.
+          </p>
+          <p>
+            However, getting comfortable with JavaScript is more challenging
+            than getting comfortable with HTML and CSS. You may have to start
+            small, and progress gradually. To begin, let's examine how to add
+            JavaScript to your page for creating a Hello world! example. (Hello
+            world! is the standard for introductory programming examples.)
+          </p>
+          <ol>
+            <li>
+              Go to your test site and create a new folder named scripts. Within
+              the scripts folder, create a new file called main.js, and save it.
+            </li>
+            <li>
+              In your index.html file, enter this code on a new line, just
+              before the closing &lt;/body&gt; tag
+              <code> &lt;script src="scripts/main.js"&gt;&lt;/script&gt; </code>
+            </li>
+            <li>
+              This is doing the same job as the &lt;link&gt; element for CSS. It
+              applies the JavaScript to the page, so it can have an effect on
+              the HTML (along with the CSS, and anything else on the page).
+            </li>
+            <li>
+              Add this code to the main.js file:
+              <code>
+                const myHeading = document.querySelector('h1'); <br />
+                myHeading.textContent = 'Hello world!';
+              </code>
+            </li>
+            <li>
+              Make sure the HTML and JavaScript files are saved. Then load
+              index.html in your browser. You should see something like this:
+            </li>
+          </ol>
+        </article>
+      </section>
+      <section class="main-section" id="What_Happened_?">
+        <header>What happened ?</header>
+        <article>
+          <p>
+            The heading text changed to Hello world! using JavaScript. You did
+            this by using a function called querySelector() to grab a reference
+            to your heading, and then store it in a variable called myHeading.
+            This is similar to what we did using CSS selectors. When you want to
+            do something to an element, you need to select it first.
+          </p>
+          <p>
+            Following that, the code set the value of the myHeading variable's
+            textContent property (which represents the content of the heading)
+            to Hello world!.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Language_Basic_Crash_Course">
+        <header>Language Basic Crash Course</header>
+        <article>
+          <p>
+            To give you a better understanding of how JavaScript works, let's
+            explain some of the core features of the language. It's worth noting
+            that these features are common to all programming languages. If you
+            master these fundamentals, you have a head start on coding in other
+            languages too!
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>
+            ariables are containers that store values. You start by declaring a
+            variable with the var (less recommended, dive deeper for the
+            explanation) or the let keyword, followed by the name you give to
+            the variable:
+            <code> let myVariable; </code>
+            After declaring a variable, you can give it a value:
+            <code>myVariable = 'Bob';</code>
+            Also, you can do both these operations on the same line:
+            <code> let myVariable = 'Bob'; </code>
+            You retrieve the value by calling the variable name:
+            <code>myVariable; </code>
+            After assigning a value to a variable, you can change it later in
+            the code:
+            <code>
+              let myVariable = 'Bob'; <br />
+              myVariable = 'Steve';
+            </code>
+          </p>
+        </article>
+      </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

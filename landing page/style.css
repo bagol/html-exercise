@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+}
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #eeeeee;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+#header-img {
+  width: 50px;
+  height: 50px;
+}
+#logo-text {
+  font-size: 24px;
+  line-height: 50px;
+  color: #f6bf55;
+  font-weight: 1000;
+}
+.logo {
+  display: flex;
+  margin-left: 30px;
+  justify-content: center;
+}
+#nav-bar {
+  margin-right: 20px;
+}
+#nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+}
+
+#nav-bar ul li {
+  border-right: 1px solid #aaaaaa;
+}
+
+#nav-bar ul li:last-child {
+  border: none;
+}
+
+#tentang {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background: #eeeeee;
+  color: #000000;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+  color: #f6bf55;
+  text-shadow: #aaa 1px 1px 1px;
+}
+
+#langganan {
+  margin-top: 65px;
+  text-align: center;
+}
+
+.input-group {
+  margin: 10px;
+}
+
+input {
+  width: 35%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  background: #035c41;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.tentang-text {
+  text-align: justify;
+  width: 55%;
+}
+
+.tentang-body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tentang-img {
+  width: 40%;
+}
+
+#video {
+  margin-top: 20px;
+  width: 60%;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+footer {
+  text-align: center;
+  height: 50px;
+  background: #eee;
+  line-height: 2.5;
+  margin-top: 10px;
+}
+
+@media (max-width: 580px) {
+  #header {
+    flex-direction: column;
+  }
+
+  #langganan {
+    margin-top: 125px;
+  }
+}

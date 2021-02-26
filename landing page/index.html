@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing page</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img
+          src="https://www.kuliahdiluarnegeri.co.id/wp-content/uploads/2017/08/tempat-wisata-favorit-pelajar-di-luar-negeri.png"
+          alt=""
+          id="header-img"
+        />
+        <small id="logo-text">Goes to Depok</small>
+      </div>
+      <nav id="nav-bar">
+        <ul>
+          <li><a href="#wisata" class="nav-link">Tempat Wisata</a></li>
+          <li><a href="#kuliner" class="nav-link">Kuliner</a></li>
+          <li><a href="#tentang" class="nav-link">Tentang Depok</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="langganan">
+      <h4>
+        Ingin Mendapatkan Update Info Menarik Seputar <br />
+        DEPOK Silahkan Berlangganan
+      </h4>
+      <form
+        action="https://www.freecodecamp.com/email-submit"
+        method="get"
+        id="form"
+      >
+        <div class="input-group">
+          <input
+            type="email"
+            id="email"
+            placeholder="Masukan Emamil untuk berlangganan"
+          />
+        </div>
+        <div class="input-group">
+          <input type="submit" value="Langganan" id="submit" class="button" />
+        </div>
+      </form>
+    </div>
+
+    <article id="tentang">
+      <div class="tentang-header">
+        <h1>Tentang Kami</h1>
+      </div>
+      <div class="tentang-body">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/1/19/Depokpictures.JPG"
+          alt=""
+          class="tentang-img"
+        />
+        <p class="tentang-text">
+          adalah sebuah kota di Provinsi Jawa Barat. Kota ini terletak tepat di
+          selatan Jakarta, yakni antara Jakarta dan Bogor. Depok adalah kota
+          yang cukup menarik karna lokasinya yang dekat dengan ibu kota depok
+          menjadi tempat yang nyaman untuk dikunjungi
+        </p>
+      </div>
+    </article>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/VOix2NiIvWk"
+      frameborder="0"
+      id="video"
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+    <section id="wisata"></section>
+    <section id="kuliner"></section>
+    <footer>
+      <small>&copy;Copyright Bagol</small>
+    </footer>
+  </body>
+</html>
